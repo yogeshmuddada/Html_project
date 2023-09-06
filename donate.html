@@ -1,0 +1,80 @@
+
+<html>
+    <head>
+        <title>Donation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+	    A
+		{
+			text-decoration:none;
+		}
+        h1{
+            text-align: center;
+        }
+        
+        .payment{
+            align-content: center;
+            width:30%;
+            background-color:  rgb(94, 214, 238);
+            margin:0 auto;
+            padding:25px 15px 25px 15px;
+        }
+        input[type=number] {
+            background-color: rgb(94, 214, 238);
+            width: 100%;
+            padding: 5px 20px;
+            margin: 8px 0;
+            text-decoration-color: aliceblue;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid red;
+          }
+          .date input[type=number]{
+              width:40%;
+          }
+          .icon-container {
+            margin-bottom: 10px;
+            padding: 0px 0;
+            font-size: 24px;
+          }
+    </style>
+    <body bgcolor="sky blue">
+        
+        <div class="payment">
+        <form action="donate.jsp">
+            <h1><img src="dyogi.jpg" width="200" height="50"></h1>
+            <h3>kindly fill your details</h3>
+			<div>
+				<input type="text" name="name" class="password" placeholder="NAME" size="50" autocomplete="off">
+			</div><br>
+            <div>
+				<input type="text" name="phone" class="password" placeholder="PHONE NO" size="50" autocomplete="off">
+			</div><br>
+            <div>
+				<input type="text" name="email" class="password" placeholder="EMAIL" size="50" autocomplete="off">
+			</div><br>
+            <div>
+                <select name="cars" id="cars">
+                    <option value="volvo">INDIA</option>
+                    <option value="saab">OTHER</option>
+                  </select>
+                  <br><br>
+            </div>
+
+              
+            <div>
+				<input type="text" name="city" class="password" placeholder="CITY" size="50" autocomplete="off">
+			</div><br>
+            <div>
+				<input type="number" name="pin" class="password" placeholder="PIN CODE" size="40" autocomplete="off">
+			</div><br>
+            <div>
+				<input type="number" name="amount" class="password" placeholder="AMOUNT" size="40" autocomplete="off">
+			</div><br>
+            <br><br>
+	        <center><button type="submit" name="submit">Submit</button></center>
+            </form>
+        
+    </body>
+</html>

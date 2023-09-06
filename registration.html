@@ -1,0 +1,150 @@
+<html>
+	<head>
+	<title> registration form </title>
+	<style>
+	body {
+	color: #fff;
+	background-image: url("natu.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	}
+	h1{
+	color: #009000;
+	text-align: center;
+	margin: 0 0 15px;
+	position: relative;
+	}
+	form {
+	color:#778899;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	padding: 50px;
+	}
+	.signup-form {
+	width: 500px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+	}
+	.a1{
+	text-align:center;
+	}
+	a{
+	color:red;
+	}
+	input[type=submit]{
+	background-color: #04AA6D;
+	color:white;
+	padding: 10px 25px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	input[type=text] {
+	padding: 8px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	</style>
+	<script>
+	function validateForm() {
+		let email = document.forms["form"]["EMAIL"].value;
+		let user = document.forms["form"]["USER"].value;
+		let mb = document.forms["form"]["MB"].value;
+		let np = document.forms["form"]["NP"].value;
+		let cp = document.forms["form"]["CMP"].value;
+		let cbox = document.forms["form"]["CBOX"].value;
+		if (email == "") {
+		alert("EMAIL ID must be filled out");
+			return false;
+		}
+		else if (email.indexOf('@')<=0) {
+		alert("In EMAIL ID @ position is invaild");
+			return false;
+		}
+		else if ((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.') ) {
+		alert("In EMAIL ID .(dot) position is invaild");
+			return false;
+		}
+		if (mb == "") {
+			alert("mobile number must be filled out");
+			return false;
+		}
+		else if(isNaN(mb)){
+			alert("charecter's are not allowed in mobile number");
+			return false;
+		}
+		else if(mb.length!=10){
+			alert("mobile number must be 10 digits");
+			return false;
+		}
+		if (user == "") {
+			alert("USER ID must be filled out");
+			return false;
+		}
+		if (np == "") {
+			alert("NEW PASSWORD must be filled out");
+			return false;
+		}
+		else if(np.length<5 || np.length >20){
+			alert("NEW PASSWORD length must be between 5 and 20");
+			return false;
+		}
+		if (cp == "") {
+			alert("COMFIRM PASSWORD must be filled out");
+			return false;
+		}
+		if(np!=cp){
+		alert("COMFIRM PASSWORD and NEW PASSWORD must be same");
+		return false;
+		}
+		if (cbox.checked ==true) {
+			alert("CHECK BOX must be filled out");
+			return false;
+		}
+	}
+	</script>
+	</head>
+	<body>
+	<div class="signup-form">
+					<form action="Regis.jsp" name="form"  onsubmit="return validateForm()" method="post">
+						<h1>*REGISTRATION FORM*</h1><br>
+						<div >
+							<input type="text" name="fname" placeholder="FIRSTNAME"  size="11"  autocomplete="off">
+							<input type="text" name="mname" placeholder="MIDDLENAME" size="10" autocomplete="off">
+							<input type="text" name="lname" placeholder="LASTNAME" size="11" autocomplete="off">
+						</div><br>
+						<div>
+							<input type="text" name="email" placeholder="EMAIL(abcd@gamil.com)" size="48" autocomplete="off"><br><br>
+						</div>
+						<div>
+							<input type="text" name="mobile" placeholder="MOBILE NUMBER" size="48" autocomplete="off" maxlength="10"><br><br>
+						</div>
+						<div>
+							<input type="text" name="userid" placeholder="USER ID" size="48"><br><br>
+						</div>
+						<div>
+							<input type="text" name="npass" placeholder="PASSWORD" size="48" autocomplete="off"><br><br>
+							<input type="text" name="cpass" placeholder="CONFORM PASSWORD" size="48" autocomplete="off"><br><br>
+						</div>
+						<div>
+							<font size=3 color="blur"><input type="checkbox" name="CBOX"><label>I accept the term of use & privacy policy</label></font><br><br>
+						</div>
+						<div>
+							<center><input type="submit" value="REGISTER NOW"></center><br><br>
+						</div>
+						<a href="main.html">To Go Home</a>
+					</form>
+						<div><center><h3>Already have an account? <a href="login.html"><b>Sign in</b></a></h3><center></div>
+	</div>
+	</body>
+
+</html>

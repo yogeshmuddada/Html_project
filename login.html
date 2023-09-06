@@ -1,0 +1,98 @@
+<html>
+	<head>
+	<title>LOGIN</title>
+	<style>
+	.main {
+	width: 500px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+	}
+	form {
+	color:#778899;
+	margin-top: 20%;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	padding: 45px;
+
+	}
+	input[type="submit"]{
+	background-color: #04AA6D;
+	color: white;
+	padding: 10px 70px;
+	margin: 0px 45px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	input[type=text] {
+	padding: 8px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	h1{
+	color:green;
+	}
+	body{
+	color: #fff;
+	background-image: url("natu.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	}
+	a{
+	color:red;
+	}
+	</style>
+	</head>
+	<body>
+		<div class="main">
+		<form  name="form" onsubmit="return validateForm()" method="post" action="login.jsp">
+			<center><h1>LOGIN FORM</h1></center>
+			<div>
+			<font size=3 color="blur"><label>USER ID:</label></font><br>
+				<input type="text" name="USER" class="form-control" id="user" placeholder="USER ID / MOBILE NUMBER / EMAIL ID" size="50" autocomplete="off">
+			</div><br>
+			<div>
+				<font size=3 color="blur"><label>PASSWORD:</label></font><br>
+				<input type="text" name="NP" class="password" placeholder="password" size="50" autocomplete="off">
+			</div><br><br>
+			<div class="submit">
+				<a href="forot.html" style="font-size:17">forget password?</a>
+				<input type="submit" value="LOGIN">
+			</div>
+		</form>
+		<div><center><h3>Don't have an account?please <a href="registration.html"><b>Sign up</b></a></h3><center></div>
+		</div>
+		<script>
+		function validateForm() {
+		let user = document.forms["form"]["USER"].value;
+		let np = document.forms["form"]["NP"].value;
+		if (user == "") {
+			alert("USER ID must be filled out");
+			return false;
+		}
+		if (np == "") {
+			alert("PASSWORD must be filled out");
+			return false;
+		}
+		else if(np.length<5 || np.length >20){
+			alert("PASSWORD length must be between 5 and 20");
+			return false;
+		}
+	}
+			
+		
+		
+			
+		
+		</script>
+	</body>
+</html>

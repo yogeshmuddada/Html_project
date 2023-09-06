@@ -1,0 +1,89 @@
+<html>
+	<head>
+	<title>contact us</title>
+	<style>
+	.main {
+	width: 500px;
+	margin: 0px;
+	padding: 40px ;
+  	font-size: 15px;
+	}
+	form {
+	color:#778899;
+	margin-top: 10%;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+
+	}
+	input[type="submit"]{
+	background-color: #04AA6D;
+	color: white;
+	padding: 10px 70px;
+	margin: 0px 45px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	input[type=text] {
+	padding: 8px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	h1{
+	color:green;
+	}
+	body{
+	color: #fff;
+	background-image: url("natu.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	}
+	a{
+	color:red;
+	}
+	</style>
+    <script>
+        function fun(){
+         window.alert("successfully completed");
+        return false;
+        }
+    </script>
+	</head>
+	<body>
+        <font size=5 color="blur"><label><u><b>Register event</b></u></label></font><br>
+        <font color="blue"> <MARQUEE>Fill the bellow form then you can able to conduct event </MARQUEE></font>
+		<div class="main">
+		<form  name="form"  method="post" action="revent.jsp">
+			<div>
+			<font size=3 color="blur"><label>YOUR NAME(required):</label></font><br>
+				<input type="text" name="name" class="form-control" placeholder="YOUR NAME" size="50" autocomplete="off">
+			</div><br>
+			<div>
+				<font size=3 color="blur"><label>PHONE NUMBER(required)</label></font><br>
+				<input type="text" name="phone" class="password" placeholder="PHONE NUMBER" size="50" autocomplete="off">
+			</div><br>
+            <div>
+				<font size=3 color="blur"><label>YOUR ADDRESS(required)</label></font><br>
+				<input type="text" name="address" class="password" placeholder="YOUR ADDRESS" size="50" autocomplete="off">
+			</div><br>
+                <div>
+                <font size=3 color="blur"><label>EVENT DETAILS</label></font><br>                    
+                <span><textarea name="message" cols="53" rows="10" aria-invalid="false"></textarea></span> </label>
+                </div><BR><BR>
+			<div class="submit">
+			<center><input type="submit" value="SEND"></center>	
+			</div>
+		</form>
+		</div>
+        <div><center><h3><a href="home.html" style="text-decoration: none; color:blue" ><u><b>>>GO TO HOME</b></u></a></h3><center></div>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+	<head>
+	<title>contact us</title>
+	<style>
+	.main {
+	width: 500px;
+	margin: 0px;
+	padding: 40px ;
+  	font-size: 15px;
+	}
+	form {
+	color:#778899;
+	margin-top: 10%;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+
+	}
+    .main2 form{
+	color:#778899;
+	margin-top: -31%;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    width:30%;
+    margin-right: 70px;
+    height: 410px;
+    float:right;
+	}
+	input[type="submit"]{
+	background-color: #04AA6D;
+	color: white;
+	padding: 10px 70px;
+	margin: 0px 45px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	input[type=text] {
+	padding: 8px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	h1{
+	color:green;
+	}
+	body{
+	color: #fff;
+	background-image: url("natu.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	}
+	a{
+	color:red;
+	}
+	</style>
+    <script>
+        function fun(){
+         window.alert("successfully completed");
+        return false;
+        }
+    </script>
+	</head>
+	<body>
+        <font size=5 color="blur"><label><u><b>CONTACT US</b></u></label></font><br>
+		<div class="main">
+		<form  name="form"  method="post" action="con.jsp">
+			<div>
+			<font size=3 color="blur"><label>YOUR NAME(required):</label></font><br>
+				<input type="text" name="name" class="form-control" placeholder="YOUR NAME" size="50" autocomplete="off">
+			</div><br>
+			<div>
+				<font size=3 color="blur"><label>YOUR EMAIL(required)</label></font><br>
+				<input type="text" name="email" class="password" placeholder="YOUR EMAIL" size="50" autocomplete="off">
+			</div><br>
+                <div>
+                <font size=3 color="blur"><label>YOUR MESSAGE</label></font><br>                    
+                <span><textarea name="message" cols="53" rows="10" aria-invalid="false"></textarea></span> </label>
+                </div><BR><BR>
+			<div class="submit">
+			<center><input type="submit" value="SEND"></center>	
+			</div>
+		</form>
+		</div>
+        <div  class="main2">
+            <form>
+                <font size=5 color=#DED93E style="text-align:left">
+                meaningful Contact Encouraged!<br>
+                Contact us is a great way to communicate with us,<br> unfortunately it is often misused and abused.<br><br>
+
+                If you are sending spam don’t waste your time,
+                 it will be filtered before it reaches us, and if it does happen to get through the filter we will just delete it.
+                 
+           </font> </form>
+        </div>
+        <div style="margin-top:90px"><center><h3><a href="home.html" style="text-decoration: none; color:#175E17" ><b>GO TO HOME</b></a></h3><center></div>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+	<head>
+	<title>LOGIN</title>
+	<style>
+	.main {
+	width: 500px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+	}
+	form {
+	color:#778899;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	padding: 50px;
+	}
+	input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 8px 40px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	input[type=text] {
+	padding: 8px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	h1{
+	color:green;
+	}
+	body{
+		color: #fff;
+	background-image: url("natu.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	}
+	</style>
+	</head>
+	<body>
+		<div class="main">
+		<form action="login.html" name="form" onsubmit="return validateForm()" method="post">
+			<center><h1>*FORGOT PASSWORD*</h1></center>
+			<div class="form-group">
+				<label>MOBILE NUMBER:</label><br>
+				<input type="text" name="MB" placeholder="MOBILE NUMBER" size="50" autocomplete="off"><br>
+				<label>OTP:</label>
+				<input type="text" name="OTP" placeholder="OTP" size="50" autocomplete="off">
+			</div><br>
+			<div>
+				<label>NEW PASSWORD:</label><br>
+				<input type="text" name="NP"  placeholder="NEW PASSWORD" size="50" autocomplete="off">
+			</div><br><br>
+			<div>
+				<label>CONFIRM PASSWORD:</label><br>
+				<input type="text" name="CMP" placeholder="CONFIRM PASSWORD" size="50"  autocomplete="off">
+			</div><br><br>
+			<div>
+				<center><input type="submit" value="Submit"><center>
+			</div>
+			
+		</form>
+		</div>
+		
+	<script>
+	function validateForm() {
+		let mb = document.forms["form"]["MB"].value;
+		let otp = document.forms["form"]["OTP"].value;
+		let np = document.forms["form"]["NP"].value;
+		let cp = document.forms["form"]["CMP"].value;
+		if (mb == "") {
+			alert("mobile number must be filled out");
+			return false;
+		}
+		else if(isNaN(mb)){
+			alert("charecter's are not allowed in mobile number");
+			return false;
+		}
+		else if(mb.length!=10){
+			alert("mobile number must be 10 digits");
+			return false;
+		}
+		if (otp == "") {
+			alert("OTP must be filled out");
+			return false;
+		}
+		else if(isNaN(otp)){
+			alert("charecter's are not allowed in otp");
+			return false;
+		}
+		else if(otp.length!=6){
+			alert("otp must be 6 digits");
+			return false;
+		}
+		if (np == "") {
+			alert("NEW PASSWORD must be filled out");
+			return false;
+		}
+		else if(np.length<5 || np.length >20){
+			alert("NEW PASSWORD length must be between 5 and 20");
+			return false;
+		}
+		if (cp == "") {
+			alert("COMFIRM PASSWORD must be filled out");
+			return false;
+		}
+		if(np!=cp){
+		alert("COMFIRM PASSWORD and NEW PASSWORD must be same");
+		return false;
+		}
+	}
+</script>
+	</body>
+</html>

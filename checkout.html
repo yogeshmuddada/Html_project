@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Check out</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        h1{
+            text-align: center;
+        }
+        
+        .payment{
+            align-content: center;
+            width:30%;
+            background-color: khaki;
+            margin:0 auto;
+            padding:25px 15px 25px 15px;
+        }
+        input[type=number] {
+            background-color: khaki;
+            width: 100%;
+            padding: 5px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid red;
+          }
+          .date input[type=number]{
+              width:40%;
+          }
+          .icon-container {
+            margin-bottom: 10px;
+            padding: 0px 0;
+            font-size: 24px;
+          }
+    </style>
+    <body>
+        <h1>Check Out</h1>
+        <div class="payment">
+        <form>
+            <input  type="radio" name="pay" class="a1" id="card radio" >
+            <label for="card radio">Credit / Debit / ATM Card</label><br><br>
+            <h3>Accepted Cards</h3>
+            <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+            <label for="card">Card number</label>
+            <input class="card" type="number" name="card" id="card"><br><br>
+            <table>
+                <tr>
+                    <td>
+                    <label for="card">Expiry Date</label>
+                    <input class="date" type="number" name="card" id="expdt"><br>
+                    </td>
+                    <td>
+                    <label for="card">CVV</label>
+                    <input class="date" type="number" name="card" id="expdt"><br>
+                    </td>
+            </tr>
+            </table>
+            <input type="radio" name="pay" class="a1" id="upi" >
+            <label for="upi">UPI</label><br><br>
+            <input type="radio" name="pay" class="a1" id="wallets" >
+            <label for="wallets">wallets</label><br><br>
+            <input type="radio" name="pay" class="a1" id="banking" >
+            <label for="banking">Net Bankings</label><br><br>
+            <input type="radio" name="pay" class="a1" id="cod" >
+            <label for="cod">Cash On Delivery</label><br>
+
+        </form>
+    </div>
+        
+    </body>
+</html>

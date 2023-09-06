@@ -1,0 +1,77 @@
+<html>
+	<head>
+	<title>Delete</title>
+	<style>
+	.main {
+	width: 500px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+	}
+	form {
+	color:#778899;
+	margin-top: 20%;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	background: transparent;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	padding: 45px;
+
+	}
+	input[type="submit"]{
+	background-color: #04AA6D;
+	color: white;
+	padding: 10px 70px;
+	margin: 0px 45px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	input[type=text] {
+	padding: 8px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	h1{
+	color:green;
+	}
+	body{
+	color: #fff;
+	background-image: url("natu.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	}
+	a{
+	color:red;
+	}
+	</style>
+	</head>
+	<body>
+		<div class="main">
+		<form  name="form" method="post" action="deleteevent.jsp">
+			<center><h1>Delete Form</h1></center>
+			<div>
+			<font size=3 color="blur"><label>Event:</label></font><br>
+				<input type="text" name="event" class="form-control" id="user" placeholder="Event" size="50" autocomplete="off">
+			</div><br>
+            <div>
+                <font size=3 color="blur"><label>Date:</label></font><br>
+                    <input type="text" name="date" class="form-control" id="user" placeholder="Date" size="50" autocomplete="off">
+                </div><br>
+			<div>
+				<font size=3 color="blur"><label>Time:</label></font><br>
+				<input type="text" name="time" class="password" placeholder="Time" size="50" autocomplete="off">
+			</div><br><br>
+			<div class="submit">
+				<input type="submit" value="Delete">
+			</div>
+		</form>
+		
+	</body>
+</html>
